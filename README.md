@@ -14,7 +14,7 @@ Experimenting with [Go](https://golang.org) and [Dolt](https://www.dolthub.com/)
 - Install dolt `sudo curl -L https://github.com/dolthub/dolt/releases/latest/download/install.sh | sudo bash`
 - Clone dolt repo `dolt clone buwilliams/twitter-db` (will become recipes later)
 - Start mysql server `dolt sql-server`
-- Clone recipes repo `https://github.com/buwilliams/twitter-clone.git`
+- Clone recipes repo `git clone https://github.com/buwilliams/recipes.git`
 - Install deps `go get`
 - Start Gin server `go run .`
 
