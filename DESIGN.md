@@ -54,8 +54,7 @@
 
 ## Todo
 
-- Import CSV into Dolt and Commit
-- Setup Nuxt UI
+- Setup ESLint
 - UI: Sign-up / sign-in page
 - UI: Landing page for user (search for recipe, list of recipes, delete recipe, create new recipe)
 - UI: Recipe landing page (show recipe)
@@ -72,3 +71,5 @@
 
 - Design Data Model
 - Setup Dolt Repo
+- Import CSV into Dolt and Commit
+- Setup Nuxt UI

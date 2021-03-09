@@ -1,0 +1,14 @@
+{
+  "name": "recipes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:buwilliams/recipes.git",
+  "author": "Buddy Williams <buddywilliams@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:ui": "nuxt"
+  },
+  "devDependencies": {
+    "nuxt": "^2.15.2"
+  }
+}
