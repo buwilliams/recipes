@@ -2,9 +2,10 @@
 
 ## Goals
 
-- Ad-free recipes
-- Create recipe for your profile
-- Calculate the calories for recipe
+- Place to store and share recipes ad-free
+- Manage recipe for your profile
+- Share recipes with URL
+- Automatically calculate the calories for your recipe by serving size
 - Standardize all calories by 1 cup
 
 ## Measurement Conversions
@@ -50,3 +51,24 @@
 - RecipeID
 - FoodID
 - Quantity (1, 2, 0.5, etc)
+
+## Todo
+
+- Import CSV into Dolt and Commit
+- Setup Nuxt UI
+- UI: Sign-up / sign-in page
+- UI: Landing page for user (search for recipe, list of recipes, delete recipe, create new recipe)
+- UI: Recipe landing page (show recipe)
+- UI: Edit Recipe Page
+- API: POST /signin
+- API: GET /signout
+- API: POST /signup
+- API: GET /recipes
+- Web hosting for Go
+- Web hosting Dolt
+- SSL Encryption
+
+## Done
+
+- Design Data Model
+- Setup Dolt Repo
