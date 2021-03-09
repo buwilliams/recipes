@@ -54,6 +54,7 @@
 
 ## Todo
 
+- Deploy project on Heroku (Go and Nuxt)
 - Setup ESLint
 - UI: Sign-up / sign-in page
 - UI: Landing page for user (search for recipe, list of recipes, delete recipe, create new recipe)
@@ -73,3 +74,4 @@
 - Setup Dolt Repo
 - Import CSV into Dolt and Commit
 - Setup Nuxt UI
+- Install Heroku CLI
