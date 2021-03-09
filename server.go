@@ -8,15 +8,15 @@ import (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root@/twitter_db")
-	if err != nil {
-		panic(err)
-	}
+	//db, err := sql.Open("mysql", "root@/twitter_db")
+	//if err != nil {
+	//panic(err)
+	//}
 
 	router := gin.Default()
 
-	router.GET("/user", getAllUsers(db))
-	router.GET("/tweet", getAllTweets(db))
+	//router.GET("/user", getAllUsers(db))
+	//router.GET("/tweet", getAllTweets(db))
 	router.GET("/ping", getPing())
 
 	router.Run()
