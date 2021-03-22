@@ -11,18 +11,7 @@ import (
 func main() {
 	db := Database{}
 	db.Load("data")
-
-	fmt.Println(db)
-
-	fmt.Println("Users:")
-	for _, u := range db.Users {
-		fmt.Println("\t", strconv.Itoa(u.ID)+") ", u.Name)
-	}
-
-	fmt.Println("Recipes:")
-	for _, r := range db.Recipes {
-		fmt.Println("\t", strconv.Itoa(r.ID)+") ", r.Name)
-	}
+	db.Print()
 }
 
 type Database struct {
@@ -98,6 +87,39 @@ func LoadRecipes(db *Database, path string) (err error) {
 	db.NextRecipeID = len(db.Recipes) + 1
 
 	return
+}
+
+func (db *Database) Print() {
+	db.PrintUsers()
+	db.PrintRecipes()
+}
+
+func (db *Database) PrintUsers() {
+	fmt.Println("Users:")
+	for _, r := range db.Users {
+		fmt.Println("\t", strconv.Itoa(r.ID)+") ", r.Name, r.Email)
+	}
+}
+
+func (db *Database) PrintFoods() {
+	fmt.Println("Foods:")
+	for _, r := range db.Foods {
+		fmt.Println("\t", strconv.Itoa(r.ID)+") ", r.Name)
+	}
+}
+
+func (db *Database) PrintIngredients() {
+	fmt.Println("Ingredients:")
+	for _, r := range db.Ingredients {
+		fmt.Println("\t", strconv.Itoa(r.ID)+") ", r.FoodID, r.RecipeID)
+	}
+}
+
+func (db *Database) PrintRecipes() {
+	fmt.Println("Recipes:")
+	for _, r := range db.Recipes {
+		fmt.Println("\t", strconv.Itoa(r.ID)+") ", r.Name)
+	}
 }
 
 type User struct {
